@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+p{
+   color: #555; 
+}
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0px;
+    float: right;
+    
+}
+.col-2 h1{
+    font-family: 'Sacramento', serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+.col-2 p{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin:30px 0;
+    border-radius: 20px; 
+    transition: transform 0.5s ;
+}
+.btn:hover{
+    background: #4e1600;
+}
+.header{
+    background: radial-gradient(#fff,#90d7e6);
+} 
+.header .row{
+    margin-top:44px ;
+}
+.category{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width:250px;
+    margin-bottom: 30px;
+    transition:  transform 0.5s;
+}
+.col-3 img{
+    width: 80%;
+}
+.small{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 10px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:  transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+    border: 8px solid black;
+}
+.title{
+    text-align: center;
+    margin: 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+}
+.title::after{
+    content: '';
+    background: #ff5b5b;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(-40%)
+}
+h3{
+    color:#555 ;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 15px;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.col-3 h3{
+    text-align: center;
+}
+.col-3:hover{
+    transform: translateY(-40px);
+}
+.offer{
+    background: #90d7e6;
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.test{
+    padding-top: 100px;
+}
+.test .col3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition:  transform 0.5s;
+}
+.test .col3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius:50% ;
+}
+.test .col3:hover{
+    transform: translateY(-40px);
+}
+#quote{
+    font-size: 80px;
+    color: #ff523b;
+}
+.test .col3 h1{
+    font-weight: 600;
+    color: #555;
+    font-size: 29px;
+
+}
+.footer{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.footcol1 h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+.footer h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.footer img{
+    width: 60px;
+    margin-top: 70px;
+}
+.offer img{
+   padding-bottom: 140px;
+}
+.col-2 .row h2{
+    font-size: 30px;
+}
+.footer .t1{
+    width: 40px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #f88b0f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #000000;
+  }
+  
+  /* Style the container/contact section */
+  .c {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .r:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .row1 {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container1 {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container1 {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn1 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn1:hover {
+    background-color: #010201;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row1 {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
